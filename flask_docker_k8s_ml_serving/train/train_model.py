@@ -12,7 +12,7 @@ X = pd.DataFrame(iris.data)
 X.columns = iris.feature_names
 y = pd.DataFrame(iris.target)
 
-# split training and test set
+# split train and test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 
 # train with Decision Tree
