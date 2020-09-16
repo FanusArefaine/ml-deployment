@@ -3,4 +3,4 @@ WORKDIR /test_client
 COPY requirements.txt /test_client
 RUN pip install -r ./requirements.txt
 COPY client.py /test_client
-CMD ["python", "/train/client.py"]
+CMD ["python", "/test_client/client.py"]
