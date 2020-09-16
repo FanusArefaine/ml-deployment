@@ -1,3 +1,4 @@
 flask
 numpy
+sklearn
 google-cloud-storage
