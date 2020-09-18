@@ -26,5 +26,5 @@ Read our Medium article and follow all the instructions of the tutorial step by 
 ## License 
 
 ## Contributors
-Elena Stamatelou
+Elena Stamatelou </br>
 Ekhtiar Syed 
