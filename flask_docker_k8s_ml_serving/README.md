@@ -1,7 +1,7 @@
 # Serving your Machine Learning model in Google Cloud Platform with Python, Docker & Kubernetes
 
 
-We present in our Medium article an end-to-end pipeline example on how to deploy your first machine learning model and in this repository you can find the necessary scripts. 
+We present in our Medium article an end-to-end architecture on how to deploy your first machine learning model and in this repository you can find the necessary scripts. 
 
 The trained model used the Iris Flower Dataset and the Decision Tree Classifier to identify different Iris Flower species.
 We used a simple model, because the modelning part is out of the tutorial's scope but you can replace it with your own more complex model.
