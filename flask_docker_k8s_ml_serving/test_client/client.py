@@ -2,7 +2,7 @@ import requests
 import json
 
 # insert here the URL given from the Kubernetes with the extension /api
-url = 'http://34.71.91.206/api'
+url = 'http://34.145.19.201/api'
 
 # the input data
 data = [[14.34, 1.68, 2.7, 25.0]]
