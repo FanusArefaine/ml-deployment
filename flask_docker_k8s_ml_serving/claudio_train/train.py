@@ -109,7 +109,7 @@ class Trainer:
 
 if __name__ == '__main__':
 
-    NUM_NOTES = 1
+    NUM_NOTES = 20
     SEQUENCE_LENGTH = 10
 
     midi_file = 'input_midi_files/bcm.mid'
