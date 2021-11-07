@@ -2,3 +2,8 @@ flask
 numpy
 sklearn
 google-cloud-storage
+pandas 
+tensorflow 
+keras
+music21 
+pickle 
