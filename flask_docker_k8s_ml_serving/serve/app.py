@@ -29,9 +29,9 @@ def makecalc():
 if __name__ == '__main__':
     # to download from Google Cloud Storage the pickle file
     storage_client = storage.Client()
-    bucket = storage_client.bucket('fp_farefain')
+    bucket = storage_client.bucket('claudio_pro')
     # loads the pickle file
-    blob = bucket.blob('prediction.pickle')
+    blob = bucket.blob('sequence_model.h5')
     # saves temporarily the pickle file
     temp_model_location = './sequence_model.h5'
     blob.download_to_filename(temp_model_location)
