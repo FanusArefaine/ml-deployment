@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import numpy as np
 import pickle as p
 from ast import literal_eval
-from google.cloud import storage
+#from google.cloud import storage
 from predict import Predictor
 from keras.models import load_model
 
@@ -16,8 +16,10 @@ app = Flask(__name__)
 @app.route('/api', methods=['POST'])
 def makecalc():
     # get the data from the user
+
     data = request.get_json()
-    data = literal_eval(data)
+
+    # print(data)
 
     # uses the model and the input data to predict
     predictor = Predictor()
@@ -28,15 +30,16 @@ def makecalc():
 
 if __name__ == '__main__':
     # to download from Google Cloud Storage the pickle file
-    storage_client = storage.Client()
-    bucket = storage_client.bucket('claudio_pro')
+    #storage_client = storage.Client()
+    #bucket = storage_client.bucket('claudio_pro')
     # loads the pickle file
-    blob = bucket.blob('sequence_model.h5')
+    #blob = bucket.blob('sequence_model.h5')
     # saves temporarily the pickle file
-    temp_model_location = './sequence_model.h5'
-    blob.download_to_filename(temp_model_location)
+    #temp_model_location = './sequence_model.h5'
+    # blob.download_to_filename(temp_model_location)
+    temp_model_location = "sequence_model.h5"
     model = load_model(temp_model_location)
 
     # runs the app
     # to run the app locally use host='127.0.0.1'
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True, host='127.0.0.1')
