@@ -1,9 +1,10 @@
 flask
 numpy
 sklearn
+scipy
+matplotlib
 google-cloud-storage
 pandas 
 tensorflow 
 keras
 music21 
-pickle 
